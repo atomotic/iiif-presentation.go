@@ -1,8 +1,8 @@
 package v3
 
 type SeeAlso struct {
-	ID      string `json:"id"`
-	Type    string `json:"type"`
-	Format  string `json:"format"`
-	Profile string `json:"profile"`
+	ID      string `json:"id,omitempty"`
+	Type    string `json:"type,omitempty"`
+	Format  string `json:"format,omitempty"`
+	Profile string `json:"profile,omitempty"`
 }

@@ -1,14 +1,14 @@
 package v3
 
 type Canvas struct {
-	ID          string           `json:"id"`
-	Type        string           `json:"type"`
-	Label       Label            `json:"label"`
-	Height      int              `json:"height"`
-	Width       int              `json:"width"`
-	Items       []AnnotationPage `json:"items"`
+	ID          string           `json:"id,omitempty"`
+	Type        string           `json:"type,omitempty"`
+	Label       Label            `json:"label,omitempty"`
+	Height      int              `json:"height,omitempty"`
+	Width       int              `json:"width,omitempty"`
+	Items       []AnnotationPage `json:"items,omitempty"`
 	Annotations []struct {
-		ID   string `json:"id"`
-		Type string `json:"type"`
+		ID   string `json:"id,omitempty"`
+		Type string `json:"type,omitempty"`
 	} `json:"annotations,omitempty"`
 }

@@ -1,12 +1,12 @@
 package v3
 
 type Thumbnail struct {
-	ID      string `json:"id"`
-	Type    string `json:"type"`
-	Format  string `json:"format"`
+	ID      string `json:"id,omitempty"`
+	Type    string `json:"type,omitempty"`
+	Format  string `json:"format,omitempty"`
 	Service []struct {
-		ID      string `json:"id"`
-		Type    string `json:"type"`
-		Profile string `json:"profile"`
-	} `json:"service"`
+		ID      string `json:"id,omitempty"`
+		Type    string `json:"type,omitempty"`
+		Profile string `json:"profile,omitempty"`
+	} `json:"service,omitempty"`
 }

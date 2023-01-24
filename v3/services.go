@@ -1,9 +1,9 @@
 package v3
 
 type Services struct {
-	ID      string    `json:"@id"`
-	Type    string    `json:"@type"`
-	Profile string    `json:"profile"`
-	Label   string    `json:"label"`
-	Service []Service `json:"service"`
+	ID      string    `json:"@id,omitempty"`
+	Type    string    `json:"@type,omitempty"`
+	Profile string    `json:"profile,omitempty"`
+	Label   string    `json:"label,omitempty"`
+	Service []Service `json:"service,omitempty"`
 }

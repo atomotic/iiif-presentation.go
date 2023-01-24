@@ -1,33 +1,33 @@
 package v3
 
 type Provider struct {
-	ID    string `json:"id"`
-	Type  string `json:"type"`
+	ID    string `json:"id,omitempty"`
+	Type  string `json:"type,omitempty"`
 	Label struct {
-		En []string `json:"en"`
-	} `json:"label"`
+		En []string `json:"en,omitempty"`
+	} `json:"label,omitempty"`
 	Homepage []struct {
-		ID    string `json:"id"`
-		Type  string `json:"type"`
+		ID    string `json:"id,omitempty"`
+		Type  string `json:"type,omitempty"`
 		Label struct {
-			En []string `json:"en"`
-		} `json:"label"`
-		Format string `json:"format"`
-	} `json:"homepage"`
+			En []string `json:"en,omitempty"`
+		} `json:"label,omitempty"`
+		Format string `json:"format,omitempty"`
+	} `json:"homepage,omitempty"`
 	Logo []struct {
-		ID      string `json:"id"`
-		Type    string `json:"type"`
-		Format  string `json:"format"`
+		ID      string `json:"id,omitempty"`
+		Type    string `json:"type,omitempty"`
+		Format  string `json:"format,omitempty"`
 		Service []struct {
-			ID      string `json:"id"`
-			Type    string `json:"type"`
-			Profile string `json:"profile"`
-		} `json:"service"`
-	} `json:"logo"`
+			ID      string `json:"id,omitempty"`
+			Type    string `json:"type,omitempty"`
+			Profile string `json:"profile,omitempty"`
+		} `json:"service,omitempty"`
+	} `json:"logo,omitempty"`
 	SeeAlso []struct {
-		ID      string `json:"id"`
-		Type    string `json:"type"`
-		Format  string `json:"format"`
-		Profile string `json:"profile"`
-	} `json:"seeAlso"`
+		ID      string `json:"id,omitempty"`
+		Type    string `json:"type,omitempty"`
+		Format  string `json:"format,omitempty"`
+		Profile string `json:"profile,omitempty"`
+	} `json:"seeAlso,omitempty"`
 }

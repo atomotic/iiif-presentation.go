@@ -1,5 +1,5 @@
 package v3
 
 type Summary struct {
-	En []string `json:"en"`
+	En []string `json:"en,omitempty"`
 }
