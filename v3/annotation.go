@@ -9,10 +9,10 @@ type Annotation struct {
 }
 
 type Body struct {
-	ID      string     `json:"id,omitempty"`
-	Type    string     `json:"type,omitempty"`
-	Format  string     `json:"format,omitempty"`
-	Service []Services `json:"service,omitempty"`
-	Height  int        `json:"height,omitempty"`
-	Width   int        `json:"width,omitempty"`
+	ID      string    `json:"id,omitempty"`
+	Type    string    `json:"type,omitempty"`
+	Format  string    `json:"format,omitempty"`
+	Service []Service `json:"service,omitempty"`
+	Height  int       `json:"height,omitempty"`
+	Width   int       `json:"width,omitempty"`
 }
